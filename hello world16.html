@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script>
+
+var money = parseInt (prompt('Сумма вклада'));
+var interest = parseInt (prompt('Процентная ставка'));
+var years = parseInt (prompt('Срок влада'));
+
+for (var a=1; a<=years; a++) {
+	money = money + money + interest/100
+	alert('Количество лет:' + a + ',сумма на счету: ' +  Math.floor(money));
+}
+
+</script>
